@@ -10,11 +10,11 @@ public class GeneradorEmail {
         System.out.println("Dominio: " + dominioWeb);
 
         nombrePersona = nombrePersona.toLowerCase();
-        nombrePersona = nombrePersona.trim();
+        nombrePersona = nombrePersona.strip();
         nombrePersona = nombrePersona.replace(' ', '.');
 
         empresaPersona = empresaPersona.toLowerCase();
-        empresaPersona = empresaPersona.trim();
+        empresaPersona = empresaPersona.strip();
         empresaPersona = empresaPersona.replace(" ", "");
 
         correoElectronico = String.join(correoElectronico,nombrePersona,"@",empresaPersona,".",dominioWeb );
